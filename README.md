@@ -43,6 +43,7 @@ git clone https://github.com/marcusmattus/thenothingapp.git
 cd thenothingapp
 yarn install
 yarn dev
+```
 Visit http://localhost:3000 and connect your wallet.
 
 💰 Tokenomics
@@ -62,9 +63,6 @@ Circle → Triangle → Square → Pentagon → Hexagon → Octagon → Metatron
 Each slide/state unlocks as more users mint nodes
 
 📂 Directory Overview
-csharp
-Copy
-Edit
 /
 ├── public/              # Static assets
 ├── src/
@@ -75,6 +73,7 @@ Edit
 ├── contracts/           # Solidity contracts
 ├── .env.example         # Environment config template
 └── README.md
+
 🧙 Philosophy
 “The blank canvas is not empty—it’s full of potential.”
 
