@@ -1,0 +1,233 @@
+/* Governance Styles for The Nothing App */
+
+.governance-section {
+  margin-top: 20px;
+}
+
+.governance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.voting-power-display {
+  background-color: rgba(20, 20, 20, 0.5);
+  border-radius: var(--border-radius-sm);
+  padding: 10px 15px;
+  font-size: 0.9rem;
+}
+
+.voting-power-value {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* Proposal List */
+.proposal-list {
+  margin-top: 20px;
+}
+
+.no-proposals {
+  text-align: center;
+  padding: 30px;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.proposal-card {
+  background-color: rgba(20, 20, 20, 0.5);
+  border-radius: var(--border-radius-sm);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 3px solid #555;
+}
+
+.proposal-active {
+  border-left-color: #888;
+}
+
+.proposal-passed {
+  border-left-color: #777;
+}
+
+.proposal-rejected, .proposal-failed_quorum {
+  border-left-color: #444;
+}
+
+.proposal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.proposal-id {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.proposal-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.proposal-description {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 15px;
+}
+
+.proposal-details {
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+}
+
+.proposal-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.proposal-detail-label {
+  color: var(--color-text-secondary);
+}
+
+/* Status indicators */
+.status-active, .status-passed, .status-rejected, .status-failed {
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: rgba(80, 80, 80, 0.3);
+  color: #aaa;
+}
+
+.status-passed {
+  background-color: rgba(70, 70, 70, 0.3);
+  color: #999;
+}
+
+.status-rejected, .status-failed {
+  background-color: rgba(50, 50, 50, 0.3);
+  color: #777;
+}
+
+/* Vote progress bar */
+.vote-progress {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.vote-bar {
+  height: 6px;
+  background-color: rgba(30, 30, 30, 0.5);
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+}
+
+.vote-for {
+  height: 100%;
+  background-color: rgba(120, 120, 120, 0.5);
+}
+
+.vote-against {
+  height: 100%;
+  background-color: rgba(60, 60, 60, 0.5);
+}
+
+.vote-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.vote-label {
+  color: var(--color-text-secondary);
+  margin-right: 5px;
+}
+
+/* Vote buttons */
+.vote-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.vote-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: center;
+}
+
+.vote-for-btn {
+  background-color: rgba(100, 100, 100, 0.3);
+  color: #ccc;
+}
+
+.vote-for-btn:hover {
+  background-color: rgba(120, 120, 120, 0.4);
+}
+
+.vote-against-btn {
+  background-color: rgba(70, 70, 70, 0.3);
+  color: #bbb;
+}
+
+.vote-against-btn:hover {
+  background-color: rgba(90, 90, 90, 0.4);
+}
+
+/* Create proposal form */
+.create-proposal-form {
+  background-color: rgba(25, 25, 25, 0.5);
+  border-radius: var(--border-radius-sm);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.create-proposal-title {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.proposal-note {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Success and error messages */
+#governance-message,
+#governance-error {
+  background-color: rgba(20, 20, 20, 0.8);
+  color: var(--color-success);
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#governance-error {
+  color: var(--color-error);
+}
+
+.hidden {
+  display: none;
+}

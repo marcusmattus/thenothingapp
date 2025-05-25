@@ -1,0 +1,158 @@
+/**
+ * Mobile-responsive styles for The Nothing App
+ */
+
+/* Base mobile styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+  /* Container adjustments */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+  }
+  
+  /* Header styling */
+  header {
+    padding: 12px 0;
+  }
+  
+  header .title {
+    font-size: 1.5rem;
+  }
+  
+  /* Sidebar adjustments */
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .sidebar .nav-item {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .sidebar .nav-item i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar .nav-item span {
+    font-size: 12px;
+  }
+  
+  /* Main content adjustments */
+  .main-content {
+    margin-left: 0;
+    padding-bottom: 70px; /* Space for bottom navigation */
+  }
+  
+  /* Network visualization */
+  #network-canvas-container {
+    height: 300px;
+  }
+  
+  /* Card layouts */
+  .card {
+    margin-bottom: 15px;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Form controls */
+  input, select, button, textarea {
+    font-size: 16px; /* Prevent zoom on focus in iOS */
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px 15px;
+  }
+  
+  /* Tab navigation */
+  .tab-navigation {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+  }
+  
+  .tab-navigation .tab {
+    padding: 10px 15px;
+  }
+  
+  /* Token actions */
+  .token-actions {
+    flex-direction: column;
+  }
+  
+  .token-action {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Mobile-specific additional styles */
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  header .title {
+    font-size: 1.3rem;
+  }
+  
+  .network-stats {
+    flex-direction: column;
+  }
+  
+  .stats-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .node-info-panel {
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    top: auto;
+  }
+}
+
+/* Landscape orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .sidebar {
+    height: 60px;
+    padding: 5px 0;
+  }
+  
+  .sidebar .nav-item i {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  
+  .sidebar .nav-item span {
+    font-size: 10px;
+  }
+  
+  .main-content {
+    padding-bottom: 60px;
+  }
+}

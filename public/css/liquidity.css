@@ -1,0 +1,101 @@
+/* Liquidity Pool and Token Supply Styles */
+
+.pool-stats,
+.supply-stats {
+  background-color: rgba(20, 20, 20, 0.5);
+  border-radius: var(--border-radius-sm);
+  padding: 12px 15px;
+  margin-bottom: 20px;
+}
+
+.pool-stat,
+.supply-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(80, 80, 80, 0.2);
+}
+
+.pool-stat:last-child,
+.supply-stat:last-child {
+  border-bottom: none;
+}
+
+.pool-stat-label,
+.supply-stat-label {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+}
+
+.pool-stat-value,
+.supply-stat-value {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.receive-amount {
+  background-color: rgba(30, 30, 30, 0.5);
+  border-radius: var(--border-radius-sm);
+  padding: 10px 15px;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.developer-note {
+  color: #888888;
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.burn-impact-text {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin: 10px 0;
+  font-style: italic;
+}
+
+/* Success and error messages */
+#liquidity-message,
+#liquidity-error {
+  background-color: rgba(20, 20, 20, 0.8);
+  color: var(--color-success);
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#liquidity-error {
+  color: var(--color-error);
+}
+
+/* Price effect visualization */
+.price-effect {
+  height: 3px;
+  background: linear-gradient(90deg, 
+    rgba(170, 170, 170, 0.1) 0%, 
+    rgba(170, 170, 170, 0.5) 50%, 
+    rgba(170, 170, 170, 0.1) 100%
+  );
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.price-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(170, 170, 170, 0.3);
+  animation: pricePulseAnim 2s ease-out infinite;
+}
+
+@keyframes pricePulseAnim {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}

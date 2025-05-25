@@ -1,0 +1,39 @@
+{
+  "name": "The Nothing App",
+  "short_name": "Nothing",
+  "description": "A blockchain-powered network visualization with NTH token functionality on Avalanche L1",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#15151F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "public/images/nth-logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "public/images/nth-logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "arena",
+      "url": "https://app.starsarena.org/store/app/nothing-app"
+    }
+  ],
+  "prefer_related_applications": false,
+  "categories": ["blockchain", "finance", "network"],
+  "screenshots": [
+    {
+      "src": "public/images/screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ]
+}

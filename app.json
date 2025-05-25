@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "The Nothing App",
+    "slug": "the-nothing-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./generated-icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./generated-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#15151F"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./generated-icon.png",
+        "backgroundColor": "#15151F"
+      }
+    },
+    "web": {
+      "favicon": "./generated-icon.png"
+    }
+  }
+}
