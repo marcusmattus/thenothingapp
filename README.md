@@ -1,115 +1,93 @@
-# thenothingapp
----
-
-````markdown
 # The Nothing App
 
-**The Nothing App** is a minimalist, decentralized web application where nothing becomes something — one user at a time. Starting from a blank screen, each new wallet-connected user mints a `$NTH` token on the Avalanche blockchain and creates a visual node in a growing, real-time universe. Every action impacts the economy and the interface. No buttons. No feed. Just presence turned into value.
+**“Starts with nothing. Becomes everything.”**
+
+The Nothing App is a minimalist, blockchain-native application that begins as a blank screen. With every new user, a glowing node appears—minted as a $NTH token on Avalanche. The app grows, not from features, but from connection. It’s presence, tokenized.
 
 ---
 
-## 🌌 Features
+## 🌌 What It Does
 
-- 🕳 **Blank Canvas UI** — The app begins with nothing. Literally.
-- 🔗 **Wallet Integration** — Connect with MetaMask or any WalletConnect-compatible wallet.
-- 🪙 **$NTH Token Minting** — Mint a native token upon sign-up (first-time only).
-- 🌐 **Node Generation** — Each user is visualized as a glowing node based on wallet hash.
-- 📈 **Dynamic Token Economy**  
-  - Mint: increases token price  
-  - Burn: removes tokens and lowers price  
-  - Sell: redistributes AVAX, decreases price
-- 🔁 **Real-Time Sync** — See new users appear live via Firebase or Socket.io.
+- **Zero UI**: The app starts as a black void—nothing appears until a wallet connects.
+- **Universal Node Minting**: Each wallet generates a unique node that appears on the canvas and mints a $NTH token.
+- **On-Chain Dynamics**: Tokens are minted (+2%) when users join, burned (–1%) when they leave, and sold (–3%) for exit penalties.
+- **Self-Expanding Universe**: As more users join, the visual and token network expands—each node connected by sacred geometric edges.
 
 ---
 
-## 🧱 Tech Stack
+## 🚀 Tech Stack
 
-| Layer        | Technology                          |
-|--------------|--------------------------------------|
-| Frontend     | Next.js, Tailwind CSS, Ethers.js     |
-| Wallet Auth  | WalletConnect, MetaMask              |
-| Blockchain   | Solidity smart contract on Avalanche |
-| Tokenomics   | Custom ERC-20 bonding curve token    |
-| Real-Time DB | Firebase Realtime Database           |
-| Hosting      | Vercel (or Netlify)                  |
+| Layer          | Tech Used            |
+|----------------|----------------------|
+| Frontend       | React.js             |
+| Wallet Connect | Wagmi + RainbowKit   |
+| Smart Contract | Solidity (Avalanche) |
+| Blockchain     | Avalanche C-Chain    |
+| Tokenomics     | $NTH Token Logic     |
+| Deployment     | GitHub Pages / Vercel|
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Getting Started
 
-### 1. Clone the Repo
-```bash
-git clone https://github.com/yourusername/nothing-app.git
-cd nothing-app
-````
+### Prerequisites
 
-### 2. Install Dependencies
+- Node.js v16+
+- Yarn or npm
+- MetaMask or compatible Web3 wallet
+
+### Installation
 
 ```bash
-npm install
-```
+git clone https://github.com/marcusmattus/thenothingapp.git
+cd thenothingapp
+yarn install
+yarn dev
+Visit http://localhost:3000 and connect your wallet.
 
-### 3. Configure Environment
+💰 Tokenomics
+Mint on Join: +2%
 
-Create a `.env.local` file:
+Burn on Leave: –1%
 
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=...
-NEXT_PUBLIC_CONTRACT_ADDRESS=...
-NEXT_PUBLIC_ALCHEMY_API=...
-```
+Sell Penalty: –3%
 
-### 4. Run Locally
+Each action directly affects token value. As users join, the price rises. When they leave or sell, the universe dims.
 
-```bash
-npm run dev
-```
+✨ Visual Concept
+The app evolves visually through sacred geometry:
 
----
+Circle → Triangle → Square → Pentagon → Hexagon → Octagon → Metatron’s Cube
 
-## 🔐 Smart Contracts
+Each slide/state unlocks as more users mint nodes
 
-* Language: Solidity
-* Network: Avalanche C-Chain
-* Key Functions:
+📂 Directory Overview
+csharp
+Copy
+Edit
+/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # UI components
+│   ├── hooks/           # Custom React hooks
+│   ├── contracts/       # Smart contract ABIs
+│   └── pages/           # Main app logic
+├── contracts/           # Solidity contracts
+├── .env.example         # Environment config template
+└── README.md
+🧙 Philosophy
+“The blank canvas is not empty—it’s full of potential.”
 
-  * `signupMint()`: Mints 1 `$NTH` token on first sign-in
-  * `burn(uint256 amount)`: Burns tokens, lowers price
-  * `sell(uint256 amount)`: Sells tokens for AVAX, reduces token price
+The Nothing App isn’t just minimal—it’s meditative. It rewards presence. Each user builds the universe by simply showing up.
 
-> Contract address and explorer link will be added here.
+🤝 Contributing
+We welcome all pull requests, issue reports, and feature ideas. Let’s build something from nothing—together.
 
----
+Fork the repo
 
-## 📦 Folder Structure
+Make changes
 
-```
-/contracts        → Solidity token contract
-/pages            → Next.js routes
-/components       → Visual and UI components
-/lib              → Wallet & Web3 helpers
-/public           → Static assets
-```
+Submit a PR
 
----
-
-## ✨ Contributing
-
-We welcome contributions! Feel free to:
-
-* Suggest features
-* Open issues
-* Submit pull requests
-
----
-
-## 📄 License
-
-MIT © 2025 — Built with zero UI, full intention.
-
----
-
-## 🙏 Credits
-
-Created by [Marcus Mattus](https://github.com/marcusmattus)
-Powered by Avalanche, Firebase, and open source curiosity.
+📝 License
+MIT © 2025 Marcus Mattus
